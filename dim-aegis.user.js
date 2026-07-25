@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         DIM Aegis Overlay - Silly tests
-// @version      1.4.1
+// @version      1.4.1t1
 // @namespace    Silly
 // @author       Silly
 // @description  Overlays Aegis weapon tier list data on DIM item popups
@@ -437,7 +437,7 @@
     let rank = g('Rank');
     if (rank === '') rank = g("\#");
     console.log('[dim-aegis silly ver] weapon:(' + g('Name').split('\n')[0].trim() + '), rank:(' + rank + ')');
-    
+
     return {
       name: g('Name').split('\n')[0].trim(),
       energy: g('Energy'),
