@@ -436,6 +436,8 @@
     const g = (k) => (row[idx[k]] ?? '').trim();
     let rank = g('Rank');
     if (rank === '') rank = g("\#");
+    console.log('[dim-aegis silly ver] weapon:(' + g('Name').split('\n')[0].trim() + '), rank:(' + rank + ')');
+    
     return {
       name: g('Name').split('\n')[0].trim(),
       energy: g('Energy'),
@@ -446,7 +448,7 @@
       perk2: g('Perk 2'),
       origin: g('Origin Trait'),
       notes: g('ANALYSIS Notes'),
-      rank: g('Rank'),
+      rank: rank,
       tier: g('Tier'),
     };
   };
