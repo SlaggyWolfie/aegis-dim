@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         DIM Aegis Overlay
-// @version      1.4.1
-// @namespace    SlaggyWolfie
-// @author       SlaggyWolfie
+// @name         DIM Aegis Overlay - Silly tests
+// @version      1.4.2
+// @namespace    Silly
+// @author       Silly
 // @description  Overlays Aegis weapon tier list data on DIM item popups
 // @match        https://app.destinyitemmanager.com/*
 // @match        https://beta.destinyitemmanager.com/*
@@ -434,6 +434,8 @@
    */
   const rowToWeapon = (row, idx) => {
     const g = (k) => (row[idx[k]] ?? '').trim();
+    let rank = g('Rank');
+    if (rank === '') rank = g("\#");
     return {
       name: g('Name').split('\n')[0].trim(),
       energy: g('Energy'),
@@ -444,7 +446,7 @@
       perk2: g('Perk 2'),
       origin: g('Origin Trait'),
       notes: g('ANALYSIS Notes'),
-      rank: g('Rank') ?? g('\#'),
+      rank: g('Rank'),
       tier: g('Tier'),
     };
   };
