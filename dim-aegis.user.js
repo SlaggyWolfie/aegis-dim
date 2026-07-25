@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         DIM Aegis Overlay
-// @version      1.4.0
+// @version      1.4.1
 // @namespace    SlaggyWolfie
 // @author       SlaggyWolfie
 // @description  Overlays Aegis weapon tier list data on DIM item popups
