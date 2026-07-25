@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         DIM Aegis Overlay - Silly tests
-// @version      1.4.1.1
+// @version      1.4.2
 // @namespace    Silly
 // @author       Silly
 // @description  Overlays Aegis weapon tier list data on DIM item popups
